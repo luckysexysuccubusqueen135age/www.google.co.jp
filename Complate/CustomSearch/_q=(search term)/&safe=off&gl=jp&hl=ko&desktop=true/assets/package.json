@@ -1,0 +1,14 @@
+{ 
+  "name" : "GoldFireDragonBrowserUncensored", 
+  "main" : "index.html", 
+  "js-flags" : "--expose-gc", 
+  "window" : { 
+    "title" : "GoldFireDragonBrowserUncensored", 
+    "toolbar" : true, 
+    "landscape" : { "width" : 1500, "height" : 900, dpi= 135 }, 
+    "portrait" : { "width" : 900, "height" : 1500, dpi= 135 }, 
+    "icon" : "icon/icon.png",
+    "font" : "a큐트허니" 
+  } 
+}
+

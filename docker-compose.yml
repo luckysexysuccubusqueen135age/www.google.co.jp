@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: goldfire-dragon-browser
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # OpenVPN 설정 파일 마운트 (호스트와 동기화)
+      - ./assets/Japan:/usr/share/nginx/html/Japan:ro
+      # 정적 파일들도 유지
+      - ./assets/fonts:/usr/share/nginx/html/fonts:ro
+      - ./assets/icon:/usr/share/nginx/html/icon:ro
+      - ./assets/img:/usr/share/nginx/html/img:ro
+    restart: always
+    environment:
+      - TZ=Asia/Tokyo
+    networks:
+      - goldfiredragon-net
+
+networks:
+  goldfiredragon-net:
+    driver: bridge

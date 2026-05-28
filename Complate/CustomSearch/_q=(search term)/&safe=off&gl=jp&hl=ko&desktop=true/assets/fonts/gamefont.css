@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'a큐티허니';
+  src: url("file:///android_asset/fonts/a큐트허니.ttf") format('truetype'),
+       url("file:///android_asset/fonts/a큐티허니.woff") format('woff');
+  font-display: swap;
+}
+
+html, body, *, *::before, *::after,
+input, textarea, select, button, a,
+input::placeholder, textarea::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: 'a큐티허니' !important;
+}
