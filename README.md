@@ -2,7 +2,7 @@
 
 
 
-#사이트 접속 url= http://www.google.co.jp/
+#사이트 접속 url= http://www.Uncensored.google.co.jp
 
 이프로젝트는 테스트버전 사이트 입니다!
 
